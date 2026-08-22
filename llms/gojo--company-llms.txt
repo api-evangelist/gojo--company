@@ -1,0 +1,76 @@
+# Gojo & Company, Inc.
+
+> Tokyo-headquartered financial inclusion holding company that invests in, acquires and
+> builds microfinance institutions and inclusive financial service providers across South
+> Asia, Southeast Asia, Central Asia, the Caucasus and Africa. Founded 4 July 2014 by
+> Taejun Shin and Sanjay Gandhi. Certified B Corporation. Private company; equity trades
+> on secondary marketplaces.
+
+## Important: there is no public API
+
+Gojo & Company publishes **no public API, no developer portal, no API documentation, and no
+machine-readable API contract** (no OpenAPI, AsyncAPI, GraphQL SDL, MCP server, A2A agent card,
+llms.txt, or /.well-known/ discovery document). Probed 2026-08-22:
+
+- `https://gojo.co/openapi.json` -> 404
+- `https://gojo.co/api` -> 404, `https://gojo.co/api-docs` -> 404, `https://gojo.co/developers` -> 404
+- `https://gojo.co/llms.txt` -> 404
+- `api.gojo.co`, `developer.gojo.co`, `docs.gojo.co` -> do not resolve in DNS
+- every `/.well-known/*` path on `gojo.co` and `www.pasio.io` -> 404
+
+Gojo does build digital financial infrastructure — a cloud core banking platform and the Pasio
+digital financial inclusion initiative — but that work is internal to the group and its partner
+institutions, and no part of it is exposed as a public developer surface. Do not attempt to call
+a Gojo API; none is published. Contact info@gojo.co for business enquiries.
+
+## Company
+
+- [Home](https://gojo.co/): Company overview and mission — enabling financial inclusion by partnering with financial service providers.
+- [Corporate information](https://gojo.co/corporate-information): Legal name, founding date, Tokyo headquarters, officers, auditor, accounting standard.
+- [Our approach](https://gojo.co/our-approach): How Gojo invests in and supports group companies.
+- [Our global presence](https://gojo.co/our-global-presence): Group companies by country.
+- [Our shareholders](https://gojo.co/our-shareholders): Investor base.
+- [Guiding principles and values](https://gojo.co/guiding-principles-and-values)
+- [History](https://gojo.co/history)
+
+## Impact and research
+
+- [Our approach to impact](https://gojo.co/our-approach-to-impact)
+- [Our impact in numbers](https://gojo.co/our-impact-in-numbers)
+- [Financial Diaries](https://gojo.co/financial-diaries): High-frequency panel research on low-income household cashflow.
+- [Client stories](https://gojo.co/client-stories)
+- [Sustainability](https://gojo.co/sustainability)
+- [B Corp](https://gojo.co/b-corp)
+- [Reports](https://gojo.co/reports): Annual and impact reporting.
+
+## Technology
+
+- [Our innovation](https://gojo.co/our-innovation): Financial Diaries, the Pasio programme, and the Gojo Foundation.
+- [Pasio](https://www.pasio.io/): Digital financial inclusion initiative for young entrepreneurs. No public API surface (probed 2026-08-22).
+
+## News
+
+- [Blog](https://gojo.co/blog) ([RSS](https://gojo.co/feed))
+- [Press releases](https://gojo.co/press-releases)
+- [Gojo in the news](https://gojo.co/gojo-in-the-news)
+- [Videos](https://gojo.co/videos) / [YouTube](https://www.youtube.com/@gojogroup)
+
+## Legal
+
+- [Terms of use and legal disclaimer](https://gojo.co/legal)
+- [Privacy policy](https://gojo.co/privacy-policy)
+
+## Optional
+
+- [Careers](https://gojo.co/join-us)
+- [Gojo Foundation](https://gojofoundation.org/topEn/)
+- [Hiive secondary-market listing](https://www.hiive.com/securities/gojo--company-stock)
+
+---
+generated: 2026-08-22
+method: generated
+source: apis.yml + gojo.co page sitemap (https://gojo.co/page-sitemap.xml) + live probes recorded in well-known/gojo--company-well-known.yml
+note: >-
+  /llms.txt was probed on gojo.co and pasio.io and returned 404 on both, so this file was
+  generated from the catalog record and the provider's own published pages. Every link above
+  was fetched and returned HTTP 200 on 2026-08-22.

@@ -1,8 +1,20 @@
 aid: gojo--company
 name: Gojo & Company
-description: 'Gojo & Company is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Gojo & Company, Inc. is a Tokyo-headquartered financial inclusion holding
+  company founded on 4 July 2014 by Taejun Shin and Sanjay Gandhi, with the stated
+  ambition of becoming a "private-sector World Bank". Gojo raises capital from mission-aligned
+  investors and deploys it into microfinance institutions and inclusive financial service
+  providers across South Asia, Southeast Asia, Central Asia, the Caucasus and Africa,
+  supplying not only equity and debt but also management, governance, risk and technology
+  support to its group companies. It runs a Financial Diaries research programme on
+  low-income household cashflows, the Pasio digital financial inclusion initiative,
+  and a non-profit arm, the Gojo Foundation. Gojo is a certified B Corporation and
+  reports under J-GAAP. It is a private company; its equity trades on secondary marketplaces
+  such as Hiive. Gojo publishes no public developer program, API documentation, or
+  machine-readable API contract — its digital financial infrastructure and cloud core
+  banking work is internal to the group and its partner institutions.'
 url: https://raw.githubusercontent.com/api-evangelist/gojo--company/refs/heads/main/apis.yml
+image: https://gojo.co/wp-content/uploads/2025/05/gojo_logo150304-01-scaled.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +24,13 @@ created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Financial Services
+- Financial Inclusion
+- Microfinance
+- Impact Investing
+- Holding Company
+- Emerging Markets
+- Japan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,58 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/gojo--company-llms.txt
+- type: WellKnownProbe
+  url: well-known/gojo--company-well-known.yml
+- type: DomainSecurity
+  url: security/gojo--company-domain-security.yml
 - type: Website
+  url: https://gojo.co/
+- type: About
+  url: https://gojo.co/corporate-information
+- type: Blog
+  url: https://gojo.co/blog
+- type: BlogRSS
+  url: https://gojo.co/feed
+- type: PressReleases
+  url: https://gojo.co/press-releases
+- type: News
+  url: https://gojo.co/gojo-in-the-news
+- type: Reports
+  url: https://gojo.co/reports
+- type: TermsOfService
+  url: https://gojo.co/legal
+- type: PrivacyPolicy
+  url: https://gojo.co/privacy-policy
+- type: Careers
+  url: https://gojo.co/join-us
+- type: YouTube
+  url: https://www.youtube.com/@gojogroup
+- type: SecondaryMarketListing
   url: https://www.hiive.com/securities/gojo--company-stock
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Gojo & Company is a microfinance holding company whose only web property is a WordPress
+    corporate site — its 50-page sitemap contains no developer, docs, or API page, api./docs./developer.
+    subdomains of gojo.co do not resolve in DNS, and the cloud core-banking platform it does build is
+    internal to its group companies rather than a published developer surface.
+  evidence:
+  - url: https://gojo.co/page-sitemap.xml
+    status: 200
+  - url: https://gojo.co/developers
+    status: 404
+  - url: https://gojo.co/openapi.json
+    status: 404
+  - url: https://gojo.co/.well-known/agent-card.json
+    status: 404
+  - url: https://www.pasio.io/
+    status: 200
+  checked: '2026-08-22'

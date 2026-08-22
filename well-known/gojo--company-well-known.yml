@@ -1,0 +1,59 @@
+generated: '2026-08-22'
+method: probed
+source: >-
+  Direct HTTP probes of the /.well-known/ discovery surface on every host reachable
+  for Gojo & Company — the corporate site gojo.co and www.pasio.io, the Pasio digital
+  financial inclusion initiative linked from https://gojo.co/our-innovation. No api.,
+  developer. or docs. subdomain of gojo.co resolves in DNS, so there is no API host to probe.
+note: >-
+  Every probed path returned a hard 404 on both hosts. A deliberate nonsense control path
+  (/.well-known/zzz-soft-404-control-probe) returned the same 404 with an identical body size
+  on each host, confirming these are genuine negatives and not a catch-all soft-200. hit_count is
+  0, so NO WellKnown and NO SecurityTxt pointer is emitted in apis.yml — this file records a
+  measured absence, not a served surface.
+hit_count: 0
+hosts:
+- host: https://gojo.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  soft_404_control:
+    path: /.well-known/zzz-soft-404-control-probe
+    status: 404
+    bytes: 196
+- host: https://www.pasio.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  soft_404_control:
+    path: /.well-known/zzz-soft-404-control-probe
+    status: 404
+    bytes: 88
