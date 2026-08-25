@@ -1,0 +1,21 @@
+{
+  "repo": "gojo--company",
+  "feeds": [
+    {
+      "source": "https://gojo.co/corporate-information",
+      "feed_url": "https://gojo.co/corporate-information",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://gojo.co/blog",
+      "feed_url": "https://gojo.co/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-22T20:20:02Z"
+}
