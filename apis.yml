@@ -14,6 +14,17 @@ description: 'Gojo & Company, Inc. is a Tokyo-headquartered financial inclusion 
   machine-readable API contract — its digital financial infrastructure and cloud core
   banking work is internal to the group and its partner institutions.'
 url: https://raw.githubusercontent.com/api-evangelist/gojo--company/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://gojo.co/wp-content/uploads/2025/05/gojo_logo150304-01-scaled.png
 x-type: company
 x-source: harvest:secondary-market
